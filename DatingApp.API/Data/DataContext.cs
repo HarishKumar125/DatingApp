@@ -8,10 +8,7 @@ namespace DatingApp.API.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options){}
 
         public DbSet<Value> Values { get; set; }
-        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        // {
-        //     optionsBuilder.UseSqlite(@"Data Source=d:\Sample.db");
-        //     base.OnConfiguring(optionsBuilder);
-        // }
+        
+        public DbSet<User> Users { get; set; }
     }
 }
