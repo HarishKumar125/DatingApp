@@ -15,7 +15,7 @@ export class ValueComponent implements OnInit {
   }
 
   getValues(): any{
-    this.http.get('http://localhost:5000/values').subscribe(
+    this.http.get('http://localhost:5050/values').subscribe(
       response => {
         this.values = response;
       }, error => {
