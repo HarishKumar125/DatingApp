@@ -9,16 +9,16 @@ import { AuthService } from '../_services/auth.service';
 export class RegisterComponent implements OnInit {
   @Output() cancelRegistration = new EventEmitter();
   model: any = {};
-  constructor(private authService:AuthService) { }
+  constructor(private authService: AuthService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  register(){
+  register(): void{
     this.authService.register(this.model);
   }
 
-  cancel(){
+  cancel(): void{
     this.cancelRegistration.emit(false);
     console.log('cancelled');
   }

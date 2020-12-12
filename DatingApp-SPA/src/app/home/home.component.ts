@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   registerMode = false;
   constructor(private http: HttpClient) { }
-  ngOnInit(){
+  ngOnInit(): void{
   }
 
   registerToggle(): void{
     this.registerMode = true;
   }
 
-  cancelRegistrationMode(registerMode: boolean){
+  cancelRegistrationMode(registerMode: boolean): void{
     this.registerMode = registerMode;
   }
 }
