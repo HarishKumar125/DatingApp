@@ -23,12 +23,7 @@ login(model: any): any{
   );
 }
 
-register(model: any): void{
-  this.http.post(this.baseUrl + 'register', model).subscribe(next => {
-    console.log('Registration successfull');
-  },
-  error => {
-    console.log(error);
-  });
+register(model: any): any{
+  return this.http.post(this.baseUrl + 'register', model);
 }
 }
