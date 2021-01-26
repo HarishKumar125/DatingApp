@@ -9,7 +9,7 @@ export const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: '',
     runGuardsAndResolvers: 'always',
-    canActivate:[AuthGuard],
+    canActivate: [AuthGuard],
     children: [
         {path: 'members', component: MemberListComponent},
         {path: 'messages', component: MessagesComponent},
