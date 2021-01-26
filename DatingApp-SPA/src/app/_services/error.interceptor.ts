@@ -7,7 +7,6 @@ import {
   HTTP_INTERCEPTORS,
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { error } from 'protractor';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
